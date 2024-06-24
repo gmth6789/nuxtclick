@@ -1,4 +1,9 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-  devtools: { enabled: false }
+export default ({
+    modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@vueuse/nuxt'],
+    build: {
+        transpile: ["@headlessui/vue"],
+    },
+    colorMode: {
+        classSuffix: '',
+    },
 })
